@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Keranjang">
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="321dp"
+        android:layout_height="447dp"
+        android:layout_marginTop="73dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/not" />
+
+    <TextView
+        android:id="@+id/textView34"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Belom Ada Barang"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView14" />
+
+    <ImageView
+        android:id="@+id/imggantipassword2"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="-12dp"
+        android:background="@drawable/back_color"
+        android:backgroundTint="#C4C4C4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imghome"
+        android:layout_width="29dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginBottom="10dp"
+        android:onClick="imghome"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/imggantipassword2"
+        app:layout_constraintTop_toTopOf="@+id/imggantipassword2"
+        app:srcCompat="@drawable/home" />
+
+    <ImageView
+        android:id="@+id/imgkeranjang2"
+        android:layout_width="56dp"
+        android:layout_height="46dp"
+        app:layout_constraintEnd_toStartOf="@+id/imgakun"
+        app:layout_constraintStart_toEndOf="@+id/imghome"
+        app:layout_constraintTop_toTopOf="@+id/imggantipassword2"
+        app:srcCompat="@drawable/ker" />
+
+    <ImageView
+        android:id="@+id/imgakun"
+        android:layout_width="29dp"
+        android:layout_height="36dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="10dp"
+        android:onClick="imgakun"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imggantipassword2"
+        app:layout_constraintTop_toTopOf="@+id/imggantipassword2"
+        app:srcCompat="@drawable/logoakun" />
+
+    <TextView
+        android:id="@+id/tvhome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginBottom="10dp"
+        android:onClick="tvhome"
+        android:text="Beranda"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/imggantipassword2"
+        app:layout_constraintTop_toBottomOf="@+id/imghome" />
+
+    <TextView
+        android:id="@+id/tvkeranjang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="4dp"
+        android:text="Keranjang"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tvakun"
+        app:layout_constraintHorizontal_bias="0.563"
+        app:layout_constraintStart_toEndOf="@+id/tvhome" />
+
+    <TextView
+        android:id="@+id/tvakun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="8dp"
+        android:onClick="tvakun"
+        android:text="Akun"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgakun" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Produk">
+
+    <ImageView
+        android:id="@+id/imgketerangan"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:background="@drawable/back_color"
+        android:backgroundTint="#C4C4C4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imggantipassword2"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="-12dp"
+        android:background="@drawable/back_color"
+        android:backgroundTint="#C4C4C4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="140dp"
+        android:layout_marginRight="140dp"
+        android:background="@drawable/search"
+        android:iconifiedByDefault="false"
+        android:queryHint="Search..."
+        app:layout_constraintBottom_toBottomOf="@+id/imgketerangan"
+        app:layout_constraintEnd_toEndOf="@+id/imgketerangan"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/Produk"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/imggantipassword2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgketerangan"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imgakun"
+        android:layout_width="29dp"
+        android:layout_height="36dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="10dp"
+        android:onClick="imgakun"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imggantipassword2"
+        app:layout_constraintTop_toTopOf="@+id/imggantipassword2"
+        app:srcCompat="@drawable/logoakun" />
+
+    <TextView
+        android:id="@+id/tvakun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="8dp"
+        android:onClick="tvakun"
+        android:text="Akun"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgakun" />
+
+    <ImageView
+        android:id="@+id/imghome"
+        android:layout_width="29dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/imggantipassword2"
+        app:layout_constraintTop_toBottomOf="@+id/Produk"
+        app:srcCompat="@drawable/home" />
+
+    <TextView
+        android:id="@+id/tvhome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginBottom="10dp"
+        android:text="Beranda"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/imggantipassword2"
+        app:layout_constraintTop_toBottomOf="@+id/imghome" />
+
+    <ImageView
+        android:id="@+id/imgkeranjang2"
+        android:layout_width="75dp"
+        android:layout_height="60dp"
+        android:onClick="imgkeranjang"
+        app:layout_constraintBottom_toBottomOf="@+id/imgketerangan"
+        app:layout_constraintEnd_toEndOf="@+id/imgketerangan"
+        app:layout_constraintStart_toEndOf="@+id/searchView"
+        app:layout_constraintTop_toTopOf="@+id/imgketerangan"
+        app:srcCompat="@drawable/ker" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="30dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/imgakun"
+        app:layout_constraintStart_toEndOf="@+id/imghome"
+        app:layout_constraintTop_toTopOf="@+id/imggantipassword2"
+        app:srcCompat="@drawable/tambah" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-5dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Tambah"
+        app:layout_constraintEnd_toStartOf="@+id/tvakun"
+        app:layout_constraintStart_toEndOf="@+id/tvhome"
+        app:layout_constraintTop_toBottomOf="@+id/imageView9" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.arghost.starkjaya">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.StarkJaya"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".LupaPassword"></activity>
+        <activity android:name=".Tambah" />
+        <activity android:name=".Keranjang" />
+        <activity
+            android:name=".CheckOut"
+            android:label="Check Out"
+            android:parentActivityName=".DetailProduk" />
+        <activity
+            android:name=".DetailProduk2"
+            android:label="Produk detail"
+            android:parentActivityName=".Produk" />
+        <activity
+            android:name=".DetailProduk"
+            android:label="Produk detail"
+            android:parentActivityName=".Produk" />
+        <activity android:name=".Produk" />
+        <activity
+            android:name=".Info_Akun"
+            android:label="Informasi Akun"
+            android:parentActivityName=".Akun" />
+        <activity
+            android:name=".Pengaturan_Akun"
+            android:label="Pengaturan Akun"
+            android:parentActivityName=".Akun" />
+        <activity
+            android:name=".Akun"
+            android:label="Akun"
+            android:parentActivityName=".Produk" />
+        <activity android:name=".KataRegister" />
+        <activity android:name=".Register" />
+        <activity android:name=".Opening">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+    </application>
+
+</manifest>
